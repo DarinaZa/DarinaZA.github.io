@@ -1,0 +1,10 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "SkodaPro-Bold";
+  src: url("./fonts/SkodaProBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SkodaProBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SkodaProBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/SkodaProBold.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
