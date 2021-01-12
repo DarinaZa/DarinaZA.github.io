@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Geo";
+  src: url("../fonts/Georgia-Italic/georgiai.eot"); 
+  src: url("../fonts/Georgia-Italic/georgiai.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Georgia-Italic/georgiai.ttf") format("truetype"), 
+    url("../fonts/Georgia-Italic/georgiai.woff") format("woff"); 
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot"); 
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"); 
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light/Montserrat-Light.eot"); 
+  src: url("../fonts/Montserrat-Light/Montserrat-Light.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Montserrat-Light/Montserrat-Light.ttf") format("truetype"),
+    url("../fonts/Montserrat-Light/Montserrat-Light.woff") format("woff"); 
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf") format("truetype"), 
+    url("../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff") format("woff"); 
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot"); 
+  src: url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf") format("truetype"), 
+    url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff") format("woff"); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+  text-decoration: none;
+}
+body{
+  padding: 20px;
+}
+.img-fluid{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1880px;
+  margin: 0 auto;
+}
+.web-design {
+  padding-top: 427px;
+  background: url(../img/Layer_6.png) no-repeat center / cover;
+}
+.web-design__inner {
+  color: #ffffff;
+  text-align: center;
+}
+.web-design__title {
+  font-family: "Playfair";
+  font-size: 140px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.web-design__txt{
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 543px;
+  margin: 0 auto;
+}
+.web-design__btn-wrap{
+  margin-top: 100px;
+}
+.popup-youtube{
+  display: inline-block;
+  border: 2px solid #ffffff;
+  padding: 22px 22px 22px 28px;
+  border-radius: 50%;
+  margin-top: 310px;
+  margin-bottom: 45px;
+}
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+.btn-primary {
+  display: block;
+  max-width: 185px;
+  border-radius: 23px;
+  background-color: #da7074;
+  padding: 15px 0;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.gallery__inner{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 95px;
+  flex-wrap: wrap;
+}
+.gallery__item{
+  flex-basis: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.gallery__photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery__txt{
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+.gallery__title{
+  font-family: Montserrat;
+font-weight: 600;
+text-transform: uppercase;
+ color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.gallery__subtitle{
+  font-family: Geo;
+font-weight: 400;
+font-style: italic;
+ color: #ffffff;
+ line-height: 30px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.footer__Our-Mission{
+  flex-basis: 365px;
+}
+.footer__title{
+  color: #151515;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.footer__title:first-letter{
+  color: #030303;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.footer__item{
+  margin-top: 40px;
+}
+.footer__content{
+ color: #565656;
+  font-family: "Geo";
+  font-size: 14px;
+  font-style: italic;
+  line-height: 26px;
+  font-weight: 400; 
+}
+.footer__txt{
+    opacity: 0.2;
+font-family: Geo;
+font-size: 12px;
+line-height: 24px;
+font-weight: 400;
+font-style: italic;
+color: #ffffff;
+text-align: center;
+}
+.footer__copyright{
+    background-color: #000000;
+    padding: 22px 0;
+}
+@media screen and (max-width: 1190px) {
+  .gallery__txt {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .web-design {
+    padding-top: 350px;
+  }
+  .web-design__title{
+    font-size: 100px;
+  }
+  .popup-youtube{
+    margin-top: 250px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    padding: 15px;
+  }
+  .web-design {
+    padding-top: 250px;
+  }
+  .web-design__title{
+    font-size: 50px;
+  }
+  .web-design__btn-wrap {
+    margin-top: 50px;
+  }
+  .popup-youtube{
+    margin-top: 200px;
+  }
+  .gallery__inner {
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+  .gallery__title{
+    font-size: 16px;
+  }
+  .gallery__subtitle{
+    font-size: 16px;
+  }
+  .footer__title{
+    letter-spacing: 1px;
+  }
+  .footer__item {
+    margin-top: 35px;
+  }
+  .footer__inner {
+    margin-bottom: 100px;
+  }
+  .footer__copyright {
+    padding: 15px 0;
+  }
+} 
+@media screen and (max-width: 800px) {
+   .footer__Our-Mission {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+  .footer__inner{
+    text-align: center;
+  }
+  .footer__item {
+    margin-top: 20px;
+  }
+  .footer__inner {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  .web-design {
+    padding-top: 150px;
+  }
+  .web-design__title{
+    font-size: 30px;
+  }
+  .web-design__txt{
+    font-size: 16px;
+  }
+  .web-design__btn-wrap {
+    margin-top: 30px;
+  }
+  .popup-youtube{
+    margin-top: 100px;
+    padding: 15px 15px 15px 20px;
+  }
+  .btn-video{
+    max-width: 20px;
+  }
+  .btn-red{
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .gallery__inner {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .gallery__item{
+    flex-basis: 50%;
+    max-height: 350px;
+  }
+   .gallery__txt {
+    top: 70%;
+  }
+  .gallery__title{
+    font-size: 14px;
+  }
+  .gallery__subtitle{
+    font-size: 14px;
+  }
+  .footer__copyright {
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .web-design {
+    padding-top: 100px;
+  }
+  .web-design__txt{
+    max-width: 500px;
+  }
+  .popup-youtube{
+    margin-top: 60px;
+    margin-bottom: 35px;
+    padding: 10px 10px 10px 15px;
+  }
+  .btn-video{
+    max-width: 15px;
+  }
+  .gallery__inner {
+    margin-bottom: 50px;
+  }
+  .footer__item {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .web-design__txt{
+    max-width: 400px;
+  }
+  .web-design__title{
+    margin-bottom: 10px;
+  }
+  .web-design__btn-wrap {
+    margin-top: 25px;
+  }
+  .gallery__inner {
+    margin-bottom: 40px;
+  }
+  .gallery__txt {
+    top: 50%;
+  }
+  .gallery__item {
+    flex-basis: 100%;
+    max-height: 250px;
+  }
+  .footer__content {
+    line-height: 22px;
+}
+  .footer__copyright {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer__title {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+}

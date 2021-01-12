@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webdesign</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<section class="web-design">
+		<div class="container">
+			<div class="web-design__inner">
+				<h1 class="web-design__title">Web Design</h1>
+				<div><p class="web-design__txt">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum , ut fermentum massa justo sit amet erat a ante venenatis dapibus posuere velit 
+				</p></div>
+				<div class="web-design__btn-wrap">
+					<a href="#" class="btn-primary">Really?</a>
+					<a class="popup-youtube" href="https://www.youtube.com/watch?v=r7uFby-FrQo"><img class="btn-video" src="img/play.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery__inner">
+				<div class="gallery__item">
+					<a href="img/Layer 1.png" title="Amet Condimentum"><img class="gallery__photo img-fluid" src="img/Layer_1_s.png" ></a>
+					<div class="gallery__txt">
+						<p class="gallery__title">Amet Condimentum</p>
+						<p class="gallery__subtitle">Dolor</p>
+					</div>
+				</div>
+				<div class="gallery__item">
+					<a href="img/Layer 2.png" title="Lorem Cursus"><img class="gallery__photo img-fluid" src="img/Layer_2_s.png" ></a>
+					<div class="gallery__txt">
+						<p class="gallery__title">Lorem Cursus</p>
+						<p class="gallery__subtitle">Ligula</p>
+					</div>
+				</div>
+				<div class="gallery__item">
+					<a href="img/Layer 3.png" title="Condimentum Ultricies"><img class="gallery__photo img-fluid" src="img/Layer_3_s.png" ></a>
+					<div class="gallery__txt">
+						<p class="gallery__title">Condimentum Ultricies</p>
+						<p class="gallery__subtitle">Consectetur</p>
+					</div>
+				</div>
+				<div class="gallery__item">
+					<a href="img/Layer 4.png" title="Ridiculus Ornare"><img class="gallery__photo img-fluid" src="img/Layer_4_s.png"></a>
+					<div class="gallery__txt">
+						<p class="gallery__title">Ridiculus Ornare</p>
+						<p class="gallery__subtitle">Ullamcorper</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__nav">
+					<span class="footer__title">Follow us</span>
+					<ul class="footer__item">
+						<li><a class="footer__content" href="#">Twitter</a></li>
+						<li><a class="footer__content" href="#">Faceboook</a></li>
+						<li><a class="footer__content" href="#">Linkedin</a></li>
+						<li><a class="footer__content" href="#">Pinterest</a></li>
+						<li><a class="footer__content" href="#">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav">
+					<span class="footer__title">Get To know us</span>
+					<ul class="footer__item">
+						<li><a class="footer__content" href="#">About</a></li>
+						<li><a class="footer__content" href="#">Policies</a></li>
+						<li><a class="footer__content" href="#">Careers</a></li>
+						<li><a class="footer__content" href="#">Press</a></li>
+						<li><a class="footer__content" href="#">Developers</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav">
+					<span class="footer__title">Locations</span>
+					<ul class="footer__item">
+						<li><a class="footer__content" href="#">Detroit</a></li>
+						<li><a class="footer__content" href="#">London</a></li>
+						<li><a class="footer__content" href="#">Florida</a></li>
+						<li><a class="footer__content" href="#">Las Vegas</a></li>
+						<li><a class="footer__content" href="#">California</a></li>
+					</ul>
+				</div>
+				<div class="footer__Our-Mission">
+					<span class="footer__title">Our Mission</span>
+					<div class="footer__item">
+						<p class="footer__content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+			    <p class="footer__txt">
+			      Copyright © 2016 @samiralley
+			    </p>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+  	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.popup-youtube').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+
+				fixedContentPos: false
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+		$('.section__gallery').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return item.el.attr('title');
+					}
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
