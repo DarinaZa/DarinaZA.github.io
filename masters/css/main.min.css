@@ -407,7 +407,8 @@ body {
 
 .trust {
   background: url("../img/back.jpeg") no-repeat center/cover;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
+  background-size: cover !important;
   padding: 130px 0; }
 
 .trust__content {
