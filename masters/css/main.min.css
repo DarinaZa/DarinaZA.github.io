@@ -33,7 +33,15 @@ body {
   font-weight: 400;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  min-height: 100%; }
 
 .container {
   max-width: 1110px;
@@ -407,8 +415,15 @@ body {
 
 .trust {
   background: url("../img/back.jpeg") no-repeat center/cover;
-  background-attachment: fixed !important;
-  background-size: cover !important;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  opacity: 1;
+  z-index: -1;
   padding: 130px 0; }
 
 .trust__content {
@@ -893,10 +908,6 @@ body {
     flex-basis: 60%; } }
 
 @media screen and (max-width: 437px) {
-  .banner__title-primary {
-    font-size: 23px; }
-  .banner__title-secondary {
-    font-size: 22px; }
   .logo__link {
     font-size: 18px;
     letter-spacing: 2px; }
