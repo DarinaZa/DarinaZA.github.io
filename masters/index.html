@@ -87,75 +87,6 @@
                             <div class="burger-menu_overlay"></div>
                         </div>
 
-                        <!--
-                                               <div class="burger-menu">
-                                               <button class="hamburger hamburger--slider " type="button">
-                                                 <span class="hamburger-box">
-                                                   <span class="hamburger-inner"></span>
-                                                 </span>
-                                               </button>
-                                               <nav class="nav">
-                                                   <ul class="nav__list">
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#home">
-                                                               Главная
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#serve">
-                                                               Услуги
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#about-us">
-                                                               О Нас
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#portfolio">
-                                                               Наши Работы
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#comments">
-                                                               Отзывы
-                                                           </a>
-                                                       </li>
-                                                       <li class="nav__list-item">
-                                                           <a class="nav__list-link" href="#feedback">
-                                                               Контакты
-                                                           </a>
-                                                       </li>
-                                                   </ul>
-                                                   <div class="social">
-                                                       <a class="social__link" href="#">
-                                                           <svg class="social__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                                viewBox="0 0 89.8 89.8" style="enable-background:new 0 0 89.8 89.8;" xml:space="preserve">
-                                                       <g> <path class="st0" d="M58.3,23.9H31.5c-4.3,0-7.7,3.5-7.7,7.7v26.8c0,4.3,3.5,7.7,7.7,7.7h26.8c4.3,0,7.7-3.5,7.7-7.7V31.6
-                                                       C66,27.4,62.5,23.9,58.3,23.9z M44.9,58.9C37.2,58.9,31,52.7,31,45c0-7.7,6.2-13.9,13.9-13.9c7.7,0,13.9,6.2,13.9,13.9
-                                                       C58.8,52.7,52.5,58.9,44.9,58.9z M59.2,34c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3C62.5,32.5,61,34,59.2,34z
-                                                       "/>
-                                                           <path class="st0" d="M44.9,37c-4.4,0-8,3.6-8,8c0,4.4,3.6,8,8,8c4.4,0,8-3.6,8-8C52.9,40.6,49.3,37,44.9,37z"/>
-                                                           <path class="st0" d="M44.9,0C20.1,0,0,20.1,0,44.9s20.1,44.9,44.9,44.9s44.9-20.1,44.9-44.9S69.7,0,44.9,0z M71.9,58.4
-                                                        c0,7.5-6.1,13.6-13.6,13.6H31.5c-7.5,0-13.6-6.1-13.6-13.6V31.6C17.9,24.1,24,18,31.5,18h26.8c7.5,0,13.6,6.1,13.6,13.6V58.4z"/>
-                                                       </g>
-                                                       </svg>
-                                                       </a>
-                                                       <a class="social__link" href="#">
-                                                           <svg class="social__icon" version="1.1" id="Ð¡Ð»Ð¾Ð¹_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                       <g>
-                                                           <polygon class="st0" points="229,283 318.9,201 197.2,273.5 217.9,325.2 	"/>
-                                                           <path class="st0" d="M256,0C114.6,0,0,114.6,0,256s114.6,256,256,256s256-114.6,256-256S397.4,0,256,0z M345.4,385l-81.5-64.8
-                                                               l-47.5,47.5l-36.5-91.3l-70.6-27.2L402.8,127L345.4,385z"/>
-                                                       </g>
-                                                       </svg>
-                                                       </a>
-                                                   </div>
-                                               </nav>
-                                               <div class="overlay"></div>
-                                               </div>
-                                                -->
                                            </div>
                                        </div>
                                    </div>
@@ -415,7 +346,7 @@
                                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
                                <script src="js/jquery.magnific-popup.js"></script>
                                <script src="js/jquery.magnific-popup.min.js"></script>
-
+                                <script src="js/parallax.min.js"></script>
                                <script>
 
                                $(function() {
@@ -462,7 +393,7 @@
                                                url: "mail.php",
                                                data: $(this).serialize()
                                            }).done(function(){
-                                               swal("Спасибо!", "Ваше сообщение отправлено!", "success");
+                                               swal("Спасибо!", "Мы с Вами свяжемся!", "success");
                                                setTimeout(function(){
                                                    $('.callback').trigger("reset");
                                                }, 3000);
